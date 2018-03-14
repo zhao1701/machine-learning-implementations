@@ -4,12 +4,6 @@ import numpy as np
 
 class RidgeRegression:
    
-   lambd = None # regularization parameter
-   weights = None # the weights to be solved that minimize the loss
-   n_features = None 
-   df = None # the degrees of freedom of the model, a function of lambd
-   method = None # normal or svd
-   
    def __init__(self, lambd = 3, method = 'svd'):
        self.lambd = lambd
        self.method = method
